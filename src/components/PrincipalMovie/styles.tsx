@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export const SlideItem = styled(Link)`
   display: flex;
-  height: 160px;
+  height: 250px;
   padding: 8px;
   flex-direction: row;
   justify-content: center;
@@ -28,7 +28,6 @@ export const BannerContainer = styled.div`
 `
 
 export const NameMovie = styled.p`
-  font-family: Mulish;
   font-size: 15px;
   letter-spacing: 0em;
   text-align: left;
@@ -40,8 +39,7 @@ export const NameMovie = styled.p`
 `
 
 export const OverviewMovie = styled.p`
-  font-family: Roboto;
-  font-size: 10px;
+  font-size: 15px;
   letter-spacing: 0em;
   color: white;
   text-align: justify;

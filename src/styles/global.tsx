@@ -11,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
         width: 100vw;
         height: 100vh;
         background-color: white;
-        font-family: Arial, Helvetica, sans-serif;
-
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
     }
 `;
 

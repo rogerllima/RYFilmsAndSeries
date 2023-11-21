@@ -15,10 +15,8 @@ export const div = styled.div<SideBar>`
   top: 0;
   left: 0;
   height: 100vh;
-  width: ${p => p.sidebar === 'true' ? '60px' : '160px'};
+  width: ${p => p.sidebar === 'true' ? '100px' : '250px'};
   background-color: #0C0B0B;
-  transition: 0.5s;
-  text-overflow: clip;
 `
 
 export const li = styled.li`
@@ -27,6 +25,8 @@ export const li = styled.li`
   color: #FDF7F7;
   list-style-type: none;
   padding: 10px;
+  align-items: center;
+  cursor: pointer;
 `
 
 export const link = styled(Link)`

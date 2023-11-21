@@ -7,7 +7,7 @@ export const DivList = styled(ListItem)`
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  max-height: 100px;
+  max-height: 200px;
   overflow-y: scroll;
   &::-webkit-scrollbar {
   display: none;

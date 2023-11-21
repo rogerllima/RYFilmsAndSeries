@@ -27,8 +27,7 @@ const Home = () => {
             .then((response) => {
                 setMoviesListSelect([...response.data.results])
             })
-    }
-        , [categorieMovieList])
+    }, [categorieMovieList])
 
 
 
@@ -74,10 +73,10 @@ const Home = () => {
                                 },
                             }}
                         >
-                            <ButtonGroup size="small" aria-label="small button group">
-                                <Button sx={{color:'white'}} onClick={() => handleClick('now_playing')}>Em Cartaz</Button>,
-                                <Button sx={{color:'white'}} onClick={() => handleClick('top_rated')}>Melhores Avaliados</Button>,
-                                <Button sx={{color:'white'}} onClick={() => handleClick('upcoming')}>Em Breve no Cinemas</Button>,
+                            <ButtonGroup size="medium" aria-label="small button group">
+                                <Button sx={{ color: 'white' }} onClick={() => handleClick('now_playing')}>Em Cartaz</Button>,
+                                <Button sx={{ color: 'white' }} onClick={() => handleClick('top_rated')}>Melhores Avaliados</Button>,
+                                <Button sx={{ color: 'white' }} onClick={() => handleClick('upcoming')}>Em Breve</Button>,
                             </ButtonGroup>
                         </Box>
                         <S.ListContainer>

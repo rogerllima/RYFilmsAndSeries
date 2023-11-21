@@ -25,7 +25,7 @@ const PricipalMovie: React.FC<PrincipalMovieProps> = ({ movies }) => {
                         <S.SlideItem to={'/movie-detail/' + val.id}>
                             <S.Img src={'https://image.tmdb.org/t/p/w500' + val.backdrop_path}></S.Img>
                             <S.NameAndOverviewDiv>
-                            <S.NameMovie>{val.title}</S.NameMovie>
+                            <S.NameMovie>{val.title.toUpperCase()}</S.NameMovie>
                             <S.OverviewMovie>{val.overview}</S.OverviewMovie>
                             </S.NameAndOverviewDiv>
                         </S.SlideItem>

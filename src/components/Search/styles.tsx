@@ -18,9 +18,7 @@ export const div = styled.div`
 `
 
 export const WhiteBorderTextField = styled(TextField)`
-  border-radius:'5px';
-  border-color: white;
-  & label.Mui-focused {
+  /* & label.Mui-focused {
     color: white;
   }
   & .MuiOutlinedInput-root {
@@ -29,6 +27,25 @@ export const WhiteBorderTextField = styled(TextField)`
     }
   }
   & input {
+    color: white;
+  }
+  position: absolute; */
+  & input {
+    color: white;
+  }
+  &.MuiTextField-root{
+    .MuiInputBase-root{
+      &.MuiOutlinedInput-root {
+        border: none;
+        & :not(:focus) {
+          border: 1.5px solid white;
+          border-radius: 4px;
+          padding: 4px;
+        }
+      }
+    }
+  }
+  & label.Mui-focused, label {
     color: white;
   }
 `;

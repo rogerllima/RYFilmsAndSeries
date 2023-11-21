@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-
+import { Swiper } from "swiper/react";
 
 export const div = styled.div`
   display: flex;
@@ -11,6 +11,7 @@ export const div = styled.div`
   gap:8px;
   color: white;
   overflow: auto;
+  height: 250px;
 `
 
 export const slideItem = styled(Link)`
@@ -24,7 +25,7 @@ export const slideItem = styled(Link)`
 
 export const img = styled.img`
   display: flex;
-  height: 140px;
+  height: 160px;
   width: 100%;
   object-fit: cover;
   padding: 5px;
@@ -32,7 +33,6 @@ export const img = styled.img`
 `
 
 export const title = styled.div`
-  font-family: ui-serif;
   font-size: 12px;
   letter-spacing: 0px;
   word-spacing: 0px;

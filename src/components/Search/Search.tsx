@@ -7,7 +7,7 @@ import { MoviesSearchType } from '../../types/MoviesSearch.js';
 const SearchBar = () => {
     const [searchResultVisible, setSearchResultVisible] = useState(false);
     const [word, setWord] = useState('');
-    const [searchResult, setSearchResults] = useState<MoviesSearchType[]>([]);
+    const [searchResult, setSearchResults] = useState<MoviesSearchType[]>();
 
     const showSearchResult = () => {
         if (word.length > 0) {
@@ -27,8 +27,10 @@ const SearchBar = () => {
                 onChange={(e) => handleChange(e.target.value)}
                 label="Titulos..."
                 autoComplete='off'
+                size='small'
+                
             />
-            {searchResultVisible && <SearchResultsList resultSearch={searchResult}></SearchResultsList>}
+            {searchResultVisible && searchResult && searchResult?.length > 0 && <SearchResultsList resultSearch={searchResult}></SearchResultsList>}
         </div>
     );
 }

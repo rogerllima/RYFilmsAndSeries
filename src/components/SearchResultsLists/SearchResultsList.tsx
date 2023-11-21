@@ -25,7 +25,7 @@ export const SearchResultsList: React.FC<SearchResultsListProps> = ({ resultSear
             {moviesResult?.map((val, key) => {
                 return <ListItem key={key} component="a" disablePadding href={'/movie-detail/' + val.id}>
                     <ListItemButton>
-                        <ListItemText primary={val.title} primaryTypographyProps={{ fontSize: '10px', color: 'white' }} />
+                        <ListItemText primary={val.title} primaryTypographyProps={{ fontSize: '15px', color: 'white' }} />
                     </ListItemButton>
                 </ListItem>
             })}

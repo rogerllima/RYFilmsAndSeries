@@ -1,5 +1,13 @@
 import { styled } from "styled-components";
+import Avatar from '@mui/material/Avatar';
 
+export const AvatarContainer = styled(Avatar)`
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+`
 export const ScreenContainer = styled.div`
   height: 85vh;
   display: flex;
@@ -37,12 +45,6 @@ export const ListContainer = styled.div`
   justify-content: space-around;
 `
 
-export const PrincipalMovieContainer = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-`
 
 export const BodyDiv = styled.div`
   background-color: #141414;
@@ -68,7 +70,6 @@ export const SeachContainer = styled.div`
 export const SlidersContainer = styled.div`
   display: flex;
   flex-direction: column;
-  
 `
 
 export const FilterDiv = styled.div`
@@ -78,10 +79,10 @@ export const FilterDiv = styled.div`
   margin-left: 8px;
   margin-right: 8px;
 `
-export const PopularMoviesConteiner = styled.div`
-  height: 30vh;
-  width: 120vw;
-  margin-left: 8px;
-  margin-right: 8px;
+export const NameUser = styled.h3`
+  color: white;
+`
 
+export const MyListName = styled.h1`
+  color: white;
 `
