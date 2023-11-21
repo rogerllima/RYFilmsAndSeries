@@ -36,7 +36,7 @@ const MyProfile = () => {
             .then((response) => {
                 setDetailAccount(response.data)
             })
-    },[])
+    }, [])
 
     const handleFilterList = (string: string) => {
         switch (string) {
@@ -52,7 +52,7 @@ const MyProfile = () => {
                 setMovies(filterByMostRecentDate(movies, storedMovieIdsAndDates))
                 break;
         }
-    }    
+    }
 
     return detailAccount && (
         <S.BodyDiv>
@@ -60,7 +60,9 @@ const MyProfile = () => {
                 <S.SideBarContainer>
                     <SideBar />
                 </S.SideBarContainer>
-                <S.AvatarContainer sx={{ width: '150px', height: '150px', objectFit:'contain'}} src={`https://www.themoviedb.org/t/p/w32_and_h32_face${detailAccount.avatar.tmdb.avatar_path}`} />
+                <S.AvatarContainer
+                    sx={{ width: '150px', height: '150px', objectFit: 'contain' }}
+                />
                 <S.NameUser> {detailAccount?.name}</S.NameUser>
                 <S.LinhaDiv></S.LinhaDiv>
                 <S.MyListName>Minha Lista</S.MyListName>
