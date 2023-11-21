@@ -24,7 +24,7 @@ export const Img = styled.img`
 export const BannerContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 60%;
 `
 
 export const NameMovie = styled.p`

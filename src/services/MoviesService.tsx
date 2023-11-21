@@ -13,9 +13,7 @@ export async function getPopularMovies() {
 }
 
 export async function filterMovies(listMovie: string = 'upcoming') {
-    const response = await api.get(`/movie/${listMovie}`)
-    console.log(response);
-    
+    const response = await api.get(`/movie/${listMovie}`)    
     return response;
 }
 

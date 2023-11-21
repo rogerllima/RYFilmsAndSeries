@@ -40,9 +40,7 @@ export const SideBarContainer = styled.div`
 `
 
 export const ListContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  height: 100px;
 `
 
 
@@ -70,6 +68,8 @@ export const SeachContainer = styled.div`
 export const SlidersContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
 `
 
 export const FilterDiv = styled.div`
@@ -86,3 +86,6 @@ export const NameUser = styled.h3`
 export const MyListName = styled.h1`
   color: white;
 `
+export const LinhaDiv = styled.div`
+  width: 1584px;
+border: 1px solid #CCCCCC`

@@ -16,7 +16,7 @@ export const div = styled.div`
 
 export const slideItem = styled(Link)`
   display: flex;
-  height: 180px;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@ export const slideItem = styled(Link)`
 
 export const img = styled.img`
   display: flex;
-  height: 160px;
+  height: 230px;
   width: 100%;
   object-fit: cover;
   padding: 5px;
@@ -43,4 +43,5 @@ export const title = styled.div`
   font-variant: normal;
   text-transform: none;
   line-break: none;
+  min-height: 30px;
 `

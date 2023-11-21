@@ -52,10 +52,7 @@ const MyProfile = () => {
                 setMovies(filterByMostRecentDate(movies, storedMovieIdsAndDates))
                 break;
         }
-    }
-
-    console.log(detailAccount);
-    
+    }    
 
     return detailAccount && (
         <S.BodyDiv>
@@ -65,6 +62,7 @@ const MyProfile = () => {
                 </S.SideBarContainer>
                 <S.AvatarContainer sx={{ width: '150px', height: '150px', objectFit:'contain'}} src={`https://www.themoviedb.org/t/p/w32_and_h32_face${detailAccount.avatar.tmdb.avatar_path}`} />
                 <S.NameUser> {detailAccount?.name}</S.NameUser>
+                <S.LinhaDiv></S.LinhaDiv>
                 <S.MyListName>Minha Lista</S.MyListName>
                 <S.SlidersContainer>
                     <S.FilterDiv>

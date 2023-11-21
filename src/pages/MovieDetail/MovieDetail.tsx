@@ -63,6 +63,7 @@ const MoveDetail = () => {
                 <S.ImageContainer>
                     <S.ImageMovie src={`https://image.tmdb.org/t/p/w500${movieDetail?.backdrop_path}`} />
                 </S.ImageContainer>
+                <S.LinhaDiv></S.LinhaDiv>
                 <S.DescriptionContainer>
                     <S.ListDiv>
                         <S.NameAndVoteDiv>
@@ -73,8 +74,8 @@ const MoveDetail = () => {
                             </S.VoteMovieDiv>
                         </S.NameAndVoteDiv>
                         <S.GenresContainer>
-                            {movieDetail?.genres.map((item) => {
-                                return < S.GenresItem > {item.name} </S.GenresItem>
+                            {movieDetail?.genres.map((item, key) => {
+                                return < S.GenresItem  key={key}> {item.name} </S.GenresItem>
                             })}
                         </S.GenresContainer>
                         <div>
@@ -85,7 +86,10 @@ const MoveDetail = () => {
                                 variant="outlined"
                                 sx={{
                                     color: 'white',
-                                    height: '50px'
+                                    height: '50px',
+                                    "&.Mui-disabled": {
+                                        color: "#c0c0c0"
+                                      }
                                 }}
                             >
                                 {isAddedToList ? 'Adicionado à Lista' : 'Adicionar à Lista'}

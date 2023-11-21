@@ -105,3 +105,7 @@ export const GenresItem = styled.div`
   color: white;
   font-size: 20px;
 `
+
+export const LinhaDiv = styled.div`
+  width: 1584px;
+  border: 1px solid #CCCCCC`
