@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 interface PrincipalMovieProps {
-    movies: ListMoviesType[] |  (() => ListMoviesType[]);
+    movies: ListMoviesType[] | (() => ListMoviesType[]);
 }
 
 const PricipalMovie: React.FC<PrincipalMovieProps> = ({ movies }) => {
@@ -19,14 +19,14 @@ const PricipalMovie: React.FC<PrincipalMovieProps> = ({ movies }) => {
             <Swiper
                 slidesPerView={1}
                 autoplay
-                >
+            >
                 {internalMovies?.map((val, key) => {
                     return <SwiperSlide className='slide-movie' key={key}>
                         <S.SlideItem to={'/movie-detail/' + val.id}>
                             <S.Img src={'https://image.tmdb.org/t/p/w500' + val.backdrop_path}></S.Img>
                             <S.NameAndOverviewDiv>
-                            <S.NameMovie>{val.title.toUpperCase()}</S.NameMovie>
-                            <S.OverviewMovie>{val.overview}</S.OverviewMovie>
+                                <S.NameMovie>{val.title.toUpperCase()}</S.NameMovie>
+                                <S.OverviewMovie>{val.overview}</S.OverviewMovie>
                             </S.NameAndOverviewDiv>
                         </S.SlideItem>
                     </SwiperSlide>

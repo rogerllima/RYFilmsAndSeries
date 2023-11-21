@@ -22,10 +22,10 @@ const SideBar = () => {
                     </S.li>
                 </S.link>
                 <S.link to="/my-profile">
-                <S.li onClick={(e) => e.stopPropagation()}>
-                    <FormatListBulletedIcon />
-                    {!sideBarExpand && <span>Minha Lista</span>}
-                </S.li>
+                    <S.li onClick={(e) => e.stopPropagation()}>
+                        <FormatListBulletedIcon />
+                        {!sideBarExpand && <span>Minha Lista</span>}
+                    </S.li>
                 </S.link>
             </ul>
         </S.div>

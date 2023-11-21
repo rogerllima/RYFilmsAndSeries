@@ -24,11 +24,11 @@ const SearchBar = () => {
     return (
         <div>
             <S.WhiteBorderTextField
-                onChange={(e) => handleChange(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e.target.value)}
                 label="Titulos..."
                 autoComplete='off'
                 size='small'
-                
+
             />
             {searchResultVisible && searchResult && searchResult?.length > 0 && <SearchResultsList resultSearch={searchResult}></SearchResultsList>}
         </div>

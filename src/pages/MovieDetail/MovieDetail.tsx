@@ -75,7 +75,7 @@ const MoveDetail = () => {
                         </S.NameAndVoteDiv>
                         <S.GenresContainer>
                             {movieDetail?.genres.map((item, key) => {
-                                return < S.GenresItem  key={key}> {item.name} </S.GenresItem>
+                                return < S.GenresItem key={key}> {item.name} </S.GenresItem>
                             })}
                         </S.GenresContainer>
                         <div>
@@ -89,7 +89,7 @@ const MoveDetail = () => {
                                     height: '50px',
                                     "&.Mui-disabled": {
                                         color: "#c0c0c0"
-                                      }
+                                    }
                                 }}
                             >
                                 {isAddedToList ? 'Adicionado à Lista' : 'Adicionar à Lista'}

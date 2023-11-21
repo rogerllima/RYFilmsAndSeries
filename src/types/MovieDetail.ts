@@ -4,5 +4,5 @@ export type MovieDetailType = {
     vote_average: number;
     backdrop_path: string,
     release_date: string
-    genres: [{name: string}]
+    genres: [{ name: string }]
 }

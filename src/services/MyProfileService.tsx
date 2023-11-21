@@ -23,8 +23,8 @@ export function filterByMostRecentDate(movies: ListMoviesType[], moviesDate: { i
     });
 
     const orderedMovies = sortedMoviesAndDates
-    .map(({ id }) => movies.find(movie => movie.id === Number(id)))
-    .filter(movie => movie !== undefined) as ListMoviesType[];
+        .map(({ id }) => movies.find(movie => movie.id === Number(id)))
+        .filter(movie => movie !== undefined) as ListMoviesType[];
 
-  return orderedMovies;
+    return orderedMovies;
 }

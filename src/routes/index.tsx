@@ -13,6 +13,7 @@ const RoutesApp = () => {
                     <Route path="/home" element={<Home />} />
                     <Route path="/movie-detail/:id" element={<MoveDetail />} />
                     <Route path="/my-profile" element={<MyProfile />} />
+                    <Route path="*" element={<Home />} />
                 </Routes>
             </Fragment>
         </BrowserRouter>

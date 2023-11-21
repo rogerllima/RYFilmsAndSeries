@@ -20,11 +20,11 @@ const ListMovies: React.FC<ListMoviesProps> = ({ movies }) => {
             <Swiper
                 slidesPerView={sidleViewLength}
                 navigation
-                style={{minWidth:'170px', maxWidth: '70%'}}
+                style={{ minWidth: '170px', maxWidth: '70%' }}
             >
                 {internalMovies?.map((val, key) => {
-                    return <SwiperSlide style={{minWidth:'170px', maxWidth: '100%'}}
-                    className='slide-card' key={key}>
+                    return <SwiperSlide style={{ minWidth: '170px', maxWidth: '100%' }}
+                        className='slide-card' key={key}>
                         <S.slideItem to={'/movie-detail/' + val.id}>
                             <S.img src={'https://image.tmdb.org/t/p/w500' + val.poster_path}></S.img>
                             <S.title>{val.title.toUpperCase()}</S.title>

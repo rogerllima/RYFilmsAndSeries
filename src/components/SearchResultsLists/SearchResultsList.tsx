@@ -20,13 +20,10 @@ export const SearchResultsList: React.FC<SearchResultsListProps> = ({ resultSear
 
     return (
         < S.DivList>
-            {/* {moviesResult?.map((val, key) => {
-                return <a href={'/movie-detail/' + val.id}><S.buttonMovie key={key}>{val.title}</S.buttonMovie></a>
-            })} */}
             {moviesResult?.map((val, key) => {
                 return <ListItem key={key} component="a" disablePadding href={'/movie-detail/' + val.id}>
                     <ListItemButton>
-                        <ListItemText primary={val.title + ' (' + dayjs(val.release_date).format('YYYY')+')'} primaryTypographyProps={{ fontSize: '15px', color: 'white' }} />
+                        <ListItemText primary={val.title + ' (' + dayjs(val.release_date).format('YYYY') + ')'} primaryTypographyProps={{ fontSize: '15px', color: 'white' }} />
                     </ListItemButton>
                 </ListItem>
             })}

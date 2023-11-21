@@ -18,18 +18,6 @@ export const div = styled.div`
 `
 
 export const WhiteBorderTextField = styled(TextField)`
-  /* & label.Mui-focused {
-    color: white;
-  }
-  & .MuiOutlinedInput-root {
-    &.Mui-focused fieldset {
-      border-color: white;
-    }
-  }
-  & input {
-    color: white;
-  }
-  position: absolute; */
   & input {
     color: white;
   }
