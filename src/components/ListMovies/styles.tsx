@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import { Swiper } from "swiper/react";
 
 export const div = styled.div`
   display: flex;

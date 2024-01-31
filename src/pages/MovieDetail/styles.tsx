@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import { createTheme } from "@mui/material/styles";
 
 export const SideBarContainer = styled.div`
   opacity: 1;
